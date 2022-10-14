@@ -1,0 +1,16 @@
+.img {
+  width: 48px;
+  height: 48px;
+  margin: 0 20px;
+}
+
+.home {
+  text-decoration: none;
+  color: #3a1212;
+  border-bottom: 3px solid #ff2625;
+}
+
+.exercises {
+  text-decoration: none;
+  color: #3a1212;
+}
