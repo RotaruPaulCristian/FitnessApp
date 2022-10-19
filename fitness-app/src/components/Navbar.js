@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
-import Logo from "../assets/images/Logo.png";
+import Fitness from "../assets/images/Fitness.png";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
       px="20px"
     >
       <Link to="/">
-        <img src={Logo} alt="logo" className={styles.img} />
+        <img src={Fitness} alt="logo" className={styles.img} />
       </Link>
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
         <Link to="/" className={styles.home}>
