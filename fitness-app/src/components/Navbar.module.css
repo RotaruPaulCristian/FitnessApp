@@ -4,13 +4,11 @@
   margin: 0 20px;
 }
 
-.home {
+.item {
   text-decoration: none;
   color: #3a1212;
-  border-bottom: 3px solid #ff2625;
 }
 
-.exercises {
-  text-decoration: none;
-  color: #3a1212;
+.item:active {
+  transform: translateY(3px);
 }

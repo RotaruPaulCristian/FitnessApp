@@ -20,12 +20,15 @@ const Navbar = () => {
         <img src={Fitness} alt="logo" className={styles.img} />
       </Link>
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
-        <Link to="/" className={styles.home}>
+        <Link to="/" className={styles.item}>
           Home
         </Link>
-        <a href="#exercises" className={styles.exercises}>
+        <a href="#exercises" className={styles.item}>
           Exercises
         </a>
+        <Link to="/favorites" className={styles.item}>
+          Favorites
+        </Link>
       </Stack>
     </Stack>
   );

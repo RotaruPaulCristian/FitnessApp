@@ -12,8 +12,8 @@ const HeroBanner = () => {
       position="relative"
       p="20px"
     >
-      <Typography color="#ff2625" fontSize="26px" fontWeight="600">
-        Fitness Club
+      <Typography color="#9b948e" fontSize="26px" fontWeight="600">
+        Fitness Association
       </Typography>
       <Typography
         fontWeight="700"
