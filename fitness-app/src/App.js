@@ -14,7 +14,7 @@ import { initialState, favoritesReducer } from "./store/Favorites/reducer";
 const App = () => {
   const [favoritesState, favoritesDispatch] = useReducer(
     favoritesReducer,
-    initialState
+    initialStatebbb
   );
 
   const favoritesContextValue = {
