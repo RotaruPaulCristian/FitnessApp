@@ -8,7 +8,7 @@ const ExerciseCard = ({ exercise }) => {
   return (
     <Link to={`/exercise/${id}`} className="exercise-card">
       <img src={gifUrl} alt={name} loading="lazy" />
-      <Stack direction="row">
+      <Stack direction="row" justifyContent="center">
         <Button
           sx={{
             ml: "21px",
@@ -42,6 +42,7 @@ const ExerciseCard = ({ exercise }) => {
         pb="10px"
         textTransform="capitalize"
         fontSize="22px"
+        textAlign="center"
       >
         {name}
       </Typography>

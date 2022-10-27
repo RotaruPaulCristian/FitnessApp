@@ -8,11 +8,12 @@ const Navbar = () => {
   return (
     <Stack
       direction="row"
-      justifyContent="space-around"
       sx={{
-        gap: { sm: "122px", xs: "40px" },
+        gap: { sm: "122px" },
         mt: { sm: "32px", xs: "20px" },
-        justifyContent: "none",
+        mr: { xs: "36px" },
+        width: "350px",
+        justifyContent: { lg: "flex-start", sm: "space-between" },
       }}
       px="20px"
     >
@@ -26,9 +27,6 @@ const Navbar = () => {
         <a href="#exercises" className={styles.item}>
           Exercises
         </a>
-        <Link to="/favorites" className={styles.item}>
-          Favorites
-        </Link>
       </Stack>
     </Stack>
   );

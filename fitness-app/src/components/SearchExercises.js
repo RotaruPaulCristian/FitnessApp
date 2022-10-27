@@ -27,8 +27,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         exerciseOptions
       );
 
-      console.log(exercisesData);
-
       const searchedExercises = exercisesData.filter(
         (exercise) =>
           exercise.name.toLowerCase().includes(search) ||
@@ -43,7 +41,12 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   };
 
   return (
-    <Stack alignItems="center" mt="300px" justifyContent="center" p="20px">
+    <Stack
+      alignItems="center"
+      sx={{ mt: { lg: "300px" } }}
+      justifyContent="center"
+      p="20px"
+    >
       <Typography
         fontWeight={700}
         sx={{

@@ -5,6 +5,7 @@ import { exerciseOptions, fetchData, youtubeOptions } from "../utils/fetchData";
 import Detail from "../components/Detail";
 import ExerciseVideos from "../components/ExerciseVideos";
 import SimilarExercises from "../components/SimilarExercises";
+import ScrollTopButton from "../components/ScrollTopButton";
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
@@ -58,6 +59,7 @@ const ExerciseDetail = () => {
         targetMuscleExercises={targetMuscleExercises}
         equipmentExercises={equipmentExercises}
       />
+      <ScrollTopButton />
     </Box>
   );
 };
