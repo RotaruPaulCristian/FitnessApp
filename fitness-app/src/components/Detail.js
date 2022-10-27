@@ -3,18 +3,9 @@ import { Typography, Stack, Button } from "@mui/material";
 import BodyPartImage from "../assets/icons/body-part.png";
 import TargetImage from "../assets/icons/target.png";
 import EquipmentImage from "../assets/icons/equipment.png";
-import { addToFavorites } from "../store/Favorites/actions";
-import { FavoritesContext } from "../store/Favorites/context";
 
 const Detail = ({ exerciseDetail }) => {
-  const { favoritesDispatch } = useContext(FavoritesContext);
-
-  function handleAddToFavorites(product) {
-    const actionResult = addToFavorites(product);
-    favoritesDispatch(actionResult);
-  }
-
-  const { id, bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
+  const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
 
   const extraDetail = [
     {
@@ -65,19 +56,6 @@ const Detail = ({ exerciseDetail }) => {
             </Typography>
           </Stack>
         ))}
-        <Button
-          onClick={() => {
-            handleAddToFavorites({
-              id,
-              bodyPart,
-              gifUrl,
-              name,
-              target,
-            });
-          }}
-        >
-          Adaugă la favorite
-        </Button>
       </Stack>
     </Stack>
   );
