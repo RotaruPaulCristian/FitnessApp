@@ -17,6 +17,7 @@ const ExerciseCard = ({ exercise }) => {
             fontSize: "14px",
             borderRadius: "20px",
             textTransform: "capitalize",
+            ":hover": { backgroundColor: "#ffa9a9" },
           }}
         >
           {bodyPart}
@@ -29,6 +30,7 @@ const ExerciseCard = ({ exercise }) => {
             fontSize: "14px",
             borderRadius: "20px",
             textTransform: "capitalize",
+            ":hover": { backgroundColor: "#fcc757" },
           }}
         >
           {target}
